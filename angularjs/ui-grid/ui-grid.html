@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="/Scripts/jquery.2.2.4.min.js"></script>
+    <script src="http://use.fontawesome.com/f59731e0fb.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+<!--    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>-->
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/charts.js"></script>
+
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="assets/main.css" type="text/css">
+</head>
+<body>
+    <div ng-controller="MainCtrl" id="main">
+
+        <div class="row" id="hdr">
+            {header here}
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div id="patientCnt_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="avgAge_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="genderGap_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="cni_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="prs_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="lob_chart" class="chart_div">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>Use "*" for wildcard searches.</div>
+
+                <button id='toggleFiltering' ng-click="toggleFiltering()" class="btn btn-success">Toggle Filtering</button>
+            
+                <div id="grid1" ui-grid="gridOptions" class="grid"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

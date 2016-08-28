@@ -1,0 +1,29 @@
+#main {
+  padding: 23px; }
+
+#hdr {
+  margin-bottom: 23px; }
+
+#toggleFiltering {
+  margin: 15px 0; }
+
+.grid {
+  width: 100%;
+  height: 450px; }
+
+.header-filtered {
+  color: blue; }
+
+.negMargOut {
+  margin: 0 -15px; }
+
+.chart_div {
+  border: 1px solid #777;
+  height: 350px;
+  margin-bottom: 25px;
+  text-align: center; }
+  .chart_div i {
+    color: #ccc;
+    font-size: 80px;
+    margin-top: 135px; }
+
